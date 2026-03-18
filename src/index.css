@@ -55,12 +55,20 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
-  height: 100dvh;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +111,7 @@ body {
 .app-container {
   display: flex;
   flex-direction: column;
-  height: 100dvh;
+  height: 100%;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
