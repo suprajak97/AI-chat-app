@@ -55,7 +55,7 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -99,7 +99,7 @@ body {
 .app-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -510,4 +510,21 @@ input:checked + .slider:before {
 .modal-btn.save:hover {
   background: #4f46e5;
   box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .input-container {
+    padding: 1rem 1rem;
+  }
+  .header {
+    padding: 1rem 1rem;
+  }
+  .chat-container {
+    padding: 1rem;
+  }
+  .message-bubble {
+    max-width: 85%;
+    padding: 0.85rem 1rem;
+  }
 }
